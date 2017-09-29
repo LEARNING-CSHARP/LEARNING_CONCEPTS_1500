@@ -1,8 +1,8 @@
 ﻿namespace LEARNING_CONCEPTS
 {
-	public partial class Form1 : System.Windows.Forms.Form
+	public partial class MainForm : System.Windows.Forms.Form
 	{
-		public Form1()
+		public MainForm()
 		{
 			InitializeComponent();
 		}

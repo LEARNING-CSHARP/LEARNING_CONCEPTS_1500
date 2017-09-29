@@ -11,8 +11,7 @@
 			// **************************************************
 
 			// **************************************************
-			Form1 startupForm = new Form1();
-			//Form2 startupForm = new Form2();
+			MainForm startupForm = new MainForm();
 
 			System.Windows.Forms.Application.Run(startupForm);
 

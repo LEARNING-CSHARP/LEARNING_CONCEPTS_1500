@@ -37,7 +37,6 @@
 
 			// Note: E Property is not Accessable!
 			//someClass6.E = 50;
-
 		}
 	}
 
