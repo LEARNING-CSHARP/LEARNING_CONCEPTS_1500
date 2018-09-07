@@ -1,7 +1,11 @@
 ﻿namespace Dtx
 {
-	public class DtxTester
+	public class DtxTester : object
 	{
+		public DtxTester() : base()
+		{
+		}
+
 		public void SomeFunction()
 		{
 			SomeClass2 someClass2 = new SomeClass2();
@@ -35,50 +39,131 @@
 	}
 
 	// Note: Wrong Usage!
-	//private class SomeClass1
+	//private class SomeClass : object
 	//{
+	//	public SomeClass() : base()
+	//	{
+	//	}
 	//}
 
-	public class SomeClass2
+	public class SomeClass2 : object
 	{
-	}
-
-	internal class SomeClass3
-	{
-	}
-
-	public class SomeClass4
-	{
-		private class SomeClass41
-		{
-		}
-
-		public class SomeClass42
-		{
-		}
-
-		internal class SomeClass43
+		public SomeClass2() : base()
 		{
 		}
 	}
 
-	internal class SomeClass5
+	internal class SomeClass3 : object
 	{
-		private class SomeClass51
-		{
-		}
-
-		public class SomeClass52
-		{
-		}
-
-		internal class SomeClass53
+		public SomeClass3() : base()
 		{
 		}
 	}
 
-	public class SomeClass6
+	//protected class SomeClass : object
+	//{
+	//	public SomeClass() : base()
+	//	{
+	//	}
+	//}
+
+	//protected internal class SomeClass : object
+	//{
+	//	public SomeClass() : base()
+	//	{
+	//	}
+	//}
+
+	public class SomeClass4 : object
 	{
+		public SomeClass4() : base()
+		{
+		}
+
+		private class SomeClass41 : object
+		{
+			public SomeClass41() : base()
+			{
+			}
+		}
+
+		public class SomeClass42 : object
+		{
+			public SomeClass42() : base()
+			{
+			}
+		}
+
+		internal class SomeClass43 : object
+		{
+			public SomeClass43() : base()
+			{
+			}
+		}
+
+		protected class SomeClass44 : object
+		{
+			public SomeClass44() : base()
+			{
+			}
+		}
+
+		protected internal class SomeClass45 : object
+		{
+			public SomeClass45() : base()
+			{
+			}
+		}
+	}
+
+	internal class SomeClass5 : object
+	{
+		public SomeClass5() : base()
+		{
+		}
+
+		private class SomeClass51 : object
+		{
+			public SomeClass51() : base()
+			{
+			}
+		}
+
+		public class SomeClass52 : object
+		{
+			public SomeClass52() : base()
+			{
+			}
+		}
+
+		internal class SomeClass53 : object
+		{
+			public SomeClass53() : base()
+			{
+			}
+		}
+
+		protected class SomeClass54 : object
+		{
+			public SomeClass54() : base()
+			{
+			}
+		}
+
+		protected internal class SomeClass55 : object
+		{
+			public SomeClass55() : base()
+			{
+			}
+		}
+	}
+
+	public class SomeClass6 : object
+	{
+		public SomeClass6() : base()
+		{
+		}
+
 		public int A;
 		private int B;
 		protected int C;
@@ -101,6 +186,10 @@
 
 	public class SomeClass7 : SomeClass6
 	{
+		public SomeClass7() : base()
+		{
+		}
+
 		public void SomeFunction2()
 		{
 			A = 10;

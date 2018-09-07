@@ -1,7 +1,11 @@
 ﻿namespace LEARNING_CONCEPTS
 {
-	public class LEARNING_CONCEPTS_TESTER
+	public class LEARNING_CONCEPTS_TESTER : object
 	{
+		public LEARNING_CONCEPTS_TESTER() : base()
+		{
+		}
+
 		public void SomeFunction()
 		{
 			Dtx.SomeClass2 someClass2 = new Dtx.SomeClass2();
@@ -42,6 +46,10 @@
 
 	public class SomeClass8 : Dtx.SomeClass6
 	{
+		public SomeClass8() : base()
+		{
+		}
+
 		public void SomeFunction2()
 		{
 			A = 10;
