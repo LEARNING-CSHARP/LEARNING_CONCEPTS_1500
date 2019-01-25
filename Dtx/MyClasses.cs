@@ -60,6 +60,7 @@
 		}
 	}
 
+	// Note: Wrong Usage!
 	//protected class SomeClass : object
 	//{
 	//	public SomeClass() : base()
@@ -67,6 +68,7 @@
 	//	}
 	//}
 
+	// Note: Wrong Usage!
 	//protected internal class SomeClass : object
 	//{
 	//	public SomeClass() : base()
@@ -76,10 +78,6 @@
 
 	public class SomeClass4 : object
 	{
-		public SomeClass4() : base()
-		{
-		}
-
 		private class SomeClass41 : object
 		{
 			public SomeClass41() : base()
@@ -114,14 +112,14 @@
 			{
 			}
 		}
+
+		public SomeClass4() : base()
+		{
+		}
 	}
 
 	internal class SomeClass5 : object
 	{
-		public SomeClass5() : base()
-		{
-		}
-
 		private class SomeClass51 : object
 		{
 			public SomeClass51() : base()
@@ -155,6 +153,10 @@
 			public SomeClass55() : base()
 			{
 			}
+		}
+
+		public SomeClass5() : base()
+		{
 		}
 	}
 
